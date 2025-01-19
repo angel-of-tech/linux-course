@@ -48,4 +48,18 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
 
   4. Hard Disk -välilehdeltä muutin levytilaksi 60 GB.
 
+  ![Add file: Upload](Picture5.png)
+
+  5. Testasin virtuaalikoneen toimintaa kirjoittamalla selaimen osoitekenttään satunnaisen nettisivun. Toimii!
+     
+  6. Seuraavaksi päivittelin kaiken tarpeellisen käyttämällä seuraavia komentoja:
+     $ sudo apt-get update (
+     $ sudo apt-get -y dist-upgrade (kaikkien ohjelmistojen päivitys)
+     $ sudo apt-get -y install ufw (palomuuri)
+     $ sudo ufw enable (palomuuri käyttöön)
+     
+  7. Sitten päätin vielä asentaa tekstieditorin, eli Vimin. Käytin seuraavaa komentoa:
+     $ sudo apt install vim
+
+
 
