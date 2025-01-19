@@ -51,8 +51,11 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
   ![Add file: Upload](Picture5.png)
 
   5. Testasin virtuaalikoneen toimintaa kirjoittamalla selaimen osoitekenttään satunnaisen nettisivun. Toimii!
+  
+  6. Sitten klikkasin itseni työpöydän Installeriin ja muutin esimerkiksi keyboard layoutin suomenkieliseksi. Lisäksi nimesin itseni ja koneeni. Valitsin tietysti erittäin vahvan salasanan.
      
-  6. 
+  ![Add file: Upload](Picture7.png)
+
      
   7. Seuraavaksi päivittelin kaiken tarpeellisen käyttämällä seuraavia komentoja:
      $ sudo apt-get update (
