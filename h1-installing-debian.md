@@ -1,14 +1,36 @@
 # h1: Oma Linux
 
-## FSF Free Software Definition
-- **Freedom 0**: 
-- **Freedom 1**: 
+Tärkeimmät pääkohdat ranskalaisin viivoin kahdesta eri artikkelista ->
+
+## **Raportin kirjoittaminen** (Karvinen, Tero 2006: Raportin kirjoittaminen. https://terokarvinen.com/2006/raportin-kirjoittaminen-4/)
+- Raportin tulee olla toistettavissa (eli raportoi eri vaiheet tarkasti).  
+- Huomioi myös laitteisto, sijainti, ja testin ajankohta.  
+- Kerro komennot ja toimenpiteet tarkkaan.  
+- Mainitse kellonajat ja onnistumisen/epäonnistumisen tulokset.  
+- Raportoi odottamattomat virheet ja niiden ratkaisut/ratkaisuyritykset.  
+- Käytä väliotsikoita ja huolellista kieltä.  
+- Merkitse ylös käyttämäsi lähteet.  
+- Älä väitä tehneesi testejä joita et oikeasti ole tehnyt, älä plagioi ja käytä vain kuvia joita on luvallista käyttää.
+
+## Free Software Foundation: FSF Free Software Definition (Free Software Foundation: What is Free Software? https://www.gnu.org/philosophy/free-sw.html#four-freedoms) 
+- Free software ei tarkoita ilmaissoftaa (vaikka sekin on mahdollista), vaan oikeutta käyttää ohjelmia vapaasti.
+- Jos softan käytössä täyttyy neljä ennaltamäärättyä vapautta, softa luetaan free softwareksi. Neljä vapautta ovat seuraavat:
+  - Freedom 0: Vapaus 0 on vapaus suorittaa ohjelma kuten itse haluaa.
+  - Freedom 1: Vapaus 1 on vapaus tutkia miten ohjelma toimii, ja muuttaa sitä sopimaan siihen tarkoitukseen mihin itse sitä tarvitsee. Tätä kohtaa varten lähdekoodin saatavuus on ensisijaisen tärkeää. Ohjelmien muokkaukseen siis kannustetaan.
+  - Freedom 2: Vapaus 2 on vapaus jakaa kopioita ohjelmasta muille. Ohjelmien levitys nähdään siis positiivisena asiana.
+  - Freedom 3: Vapaus 3 on vapaus jakaa ja levittää myös niitä versioita ohjelmasta, joita on itse muuttanut ja muokannut. Muutkin siis hyötyvät yksilön luovuudesta ja innovoinnista.
 
 ## Linuxin asennus virtuaalikoneeseen
 
-Koneeni isäntäjärjestelmä on Windows 11.
+Koneeni isäntäjärjestelmä on Windows 11. Koneeni on itse koottu PC, speksit ovat:
+Prosessori (CPU): 13th Gen Intel Core i5-13400F @ 2.5 GHz.
+Muisti (RAM): 16,0 GB.
+Tallennustila: Samsung SSD 980, 1 TB.
+Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
 
 - **Virtuaalikoneen asennuksen vaiheet**:
+
+  Pohjana Tero Karvinen 2024: Install Debian on Virtualbox, https://terokarvinen.com/2021/install-debian-on-virtualbox/
   
   ![Add file: Upload](Picture1.png)
   
@@ -26,6 +48,4 @@ Koneeni isäntäjärjestelmä on Windows 11.
 
   4. Hard Disk -välilehdeltä muutin levytilaksi 60 GB.
 
-## Suosikkiohjelmani Linuxilla (Bonus)
-- Ohjelman nimi: Vim
-- Asensin Linuxiin Vim-nimisen tekstinkäsittelyohjelman. 
+
