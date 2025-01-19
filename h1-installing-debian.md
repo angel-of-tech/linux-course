@@ -2,7 +2,7 @@
 
 Tärkeimmät pääkohdat ranskalaisin viivoin kahdesta eri artikkelista ->
 
-## **Raportin kirjoittaminen** (Karvinen, Tero 2006: Raportin kirjoittaminen. https://terokarvinen.com/2006/raportin-kirjoittaminen-4/)
+### **Raportin kirjoittaminen** (Karvinen, Tero 2006: Raportin kirjoittaminen. https://terokarvinen.com/2006/raportin-kirjoittaminen-4/)
 - Raportin tulee olla toistettavissa (eli raportoi eri vaiheet tarkasti).  
 - Huomioi myös laitteisto, sijainti, ja testin ajankohta.  
 - Kerro komennot ja toimenpiteet tarkkaan.  
@@ -12,7 +12,7 @@ Tärkeimmät pääkohdat ranskalaisin viivoin kahdesta eri artikkelista ->
 - Merkitse ylös käyttämäsi lähteet.  
 - Älä väitä tehneesi testejä joita et oikeasti ole tehnyt, älä plagioi ja käytä vain kuvia joita on luvallista käyttää.
 
-## Free Software Foundation: FSF Free Software Definition (Free Software Foundation: What is Free Software? https://www.gnu.org/philosophy/free-sw.html#four-freedoms) 
+### Free Software Foundation: FSF Free Software Definition (Free Software Foundation: What is Free Software? https://www.gnu.org/philosophy/free-sw.html#four-freedoms) 
 - Free software ei tarkoita ilmaissoftaa (vaikka sekin on mahdollista), vaan oikeutta käyttää ohjelmia vapaasti.
 - Jos softan käytössä täyttyy neljä ennaltamäärättyä vapautta, softa luetaan free softwareksi. Neljä vapautta ovat seuraavat:
   - Freedom 0: Vapaus 0 on vapaus suorittaa ohjelma kuten itse haluaa.
@@ -20,7 +20,7 @@ Tärkeimmät pääkohdat ranskalaisin viivoin kahdesta eri artikkelista ->
   - Freedom 2: Vapaus 2 on vapaus jakaa kopioita ohjelmasta muille. Ohjelmien levitys nähdään siis positiivisena asiana.
   - Freedom 3: Vapaus 3 on vapaus jakaa ja levittää myös niitä versioita ohjelmasta, joita on itse muuttanut ja muokannut. Muutkin siis hyötyvät yksilön luovuudesta ja innovoinnista.
 
-## Linuxin asennus virtuaalikoneeseen
+### Linuxin asennus virtuaalikoneeseen
 
 Koneeni isäntäjärjestelmä on Windows 11. Koneeni on itse koottu PC, speksit ovat:
 Prosessori (CPU): 13th Gen Intel Core i5-13400F @ 2.5 GHz.
@@ -52,14 +52,20 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
 
   5. Testasin virtuaalikoneen toimintaa kirjoittamalla selaimen osoitekenttään satunnaisen nettisivun. Toimii!
      
-  6. Seuraavaksi päivittelin kaiken tarpeellisen käyttämällä seuraavia komentoja:
+  6. 
+     
+  7. Seuraavaksi päivittelin kaiken tarpeellisen käyttämällä seuraavia komentoja:
      $ sudo apt-get update (
      $ sudo apt-get -y dist-upgrade (kaikkien ohjelmistojen päivitys)
      $ sudo apt-get -y install ufw (palomuuri)
      $ sudo ufw enable (palomuuri käyttöön)
      
-  7. Sitten päätin vielä asentaa tekstieditorin, eli Vimin. Käytin seuraavaa komentoa:
+  8. Sitten päätin vielä asentaa tekstieditorin, eli Vimin. Käytin seuraavaa komentoa:
      $ sudo apt install vim
+     
+ ![Add file: Upload](Picture6.png)
 
+ Ja asennus toimi! Pääse luomaan "hienotiedosto"-nimisen tiedoston ja kirjoittamaan siihen komennolla:
+    $ vim hienotiedosto
 
 
