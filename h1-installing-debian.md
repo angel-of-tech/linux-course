@@ -68,7 +68,10 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
      
  ![Add file: Upload](Picture6.png)
 
- Ja asennus toimi! Pääse luomaan "hienotiedosto"-nimisen tiedoston ja kirjoittamaan siihen komennolla:
+ Ja asennus toimi! Pääsin luomaan "hienotiedosto"-nimisen tiedoston ja kirjoittamaan siihen komennolla:
     $ vim hienotiedosto
+    
+    ![Add file: Upload](Picture8.png)
+
 
 
