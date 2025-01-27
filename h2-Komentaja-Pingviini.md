@@ -1,4 +1,5 @@
 x) Pikainen tiivistys Tero Karvisen artikkelista [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)
+
 Tärkeimpiä komentorivikehotteita:
 - `pwd`: näyttää nykyisen työhakemiston.  
 - `ls`: listaa hakemiston tiedostot ja kansiot.  
