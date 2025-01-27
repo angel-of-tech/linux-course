@@ -1,4 +1,4 @@
-x) Pikainen tiivistys Tero Karvisen artikkelista Command Line Basics Revisited (https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)
+x) Pikainen tiivistys Tero Karvisen artikkelista [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited)
 Tärkeimpiä komentorivikehotteita:
 - `pwd`: näyttää nykyisen työhakemiston.  
 - `ls`: listaa hakemiston tiedostot ja kansiot.  
@@ -42,7 +42,7 @@ Kolmas ohjelma oli Nmap, jolla skannasin satunnaisen verkkosivun. Selvitin kysei
 
 kuva
 
-c) Kävin läpi Linux-järjestelmäni tärkeimmät kansiot noudattaen Tero Karvisen Command Line Basics Revisited -artikkelia (https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). 
+c) Kävin läpi Linux-järjestelmäni tärkeimmät kansiot noudattaen Tero Karvisen [Command Line Basics Revisited -artikkelia](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). 
 Aloitin juuresta, eli /, komennolla `ls /`.
 
 kuva
@@ -65,7 +65,7 @@ kuva
 
 
 d) & e) Grep-komentoa käyttämällä voi etsiä tekstiä ja sanoja tiedostoista. Se on helppo tapa löytää tärkeä tieto isosta määrästä dataa, esimerkeiksi logeissa. (https://www.gnu.org/software/grep/manual/grep.html) 
-Loin nopeasti tekstitiedoston kopiomalla Dracula-kirjan ensimmäisen kappaleen Gutenbergista (https://www.gutenberg.org/cache/epub/345/pg345-images.html), käyttäen komentoa `echo "teksti" > dracula.txt`. Sitten greppasin "you"-sanan esiintymismäärän tekstissä komennolla `grep -o "you" dracula.txt | wc -l`. Kommennosta näkee, että käytin myös putkimerkkiä. Putkimerkki ohjaa grep-komennon tulosteen seuraavalle komennolle. Tässä tapauksessa grep siis ensin tulostaa jokaisen "you"-sanan omalle rivilleen, ja putkimerkki siirtää tämän tulosteen wc-komennolle (word count), joka laskee rivien määrän.
+Loin nopeasti tekstitiedoston kopiomalla Dracula-kirjan ensimmäisen kappaleen [Gutenbergista](https://www.gutenberg.org/cache/epub/345/pg345-images.html), käyttäen komentoa `echo "teksti" > dracula.txt`. Sitten greppasin "you"-sanan esiintymismäärän tekstissä komennolla `grep -o "you" dracula.txt | wc -l`. Kommennosta näkee, että käytin myös putkimerkkiä. Putkimerkki ohjaa grep-komennon tulosteen seuraavalle komennolle. Tässä tapauksessa grep siis ensin tulostaa jokaisen "you"-sanan omalle rivilleen, ja putkimerkki siirtää tämän tulosteen wc-komennolle (word count), joka laskee rivien määrän.
 
 kuva
 
@@ -79,8 +79,17 @@ f) Asensin ensin lshw:n komennolla `sudo apt-get install lshw`
 
 kuva
 
-Seuraavaksi ajoin komennon `sudo lshw -short -sanitize`.
+Seuraavaksi ajoin komennon `sudo lshw -short -sanitize`. Tässä komennossa "sanitize" pitää huolen siitä, ettei näkyviin tule henkilökohtaisia tunnistetietoja, kuten IP-osoitteita.
 
 kuva
 
-Komento näyttää virtuaalikoneen raudan osat. 
+Komento näyttää virtuaalikoneen raudan osat. Käydään läpi mitä tärkeimmät kohdat tuloksessa tarkoittavat. Käytin oman ymmärtämisen apuna Googlea, erityisesti tätä [sivua](https://linuxhandbook.com/lshw-command/)
+
+System: kertoo järjestelmän, tässä tapauksessa virtualisoidun järjestelmän eli VirtualBoxin.
+Bus: virtuaalikoneessa väylä on myös virtuaalinen, eli VirtualBox
+Memory: muisti, sekä system memory (4GB) että BIOS (128KB). BIOSin on pakko käyttää pieni osa muistista järjestelmän käynnistykseen.
+Processor: eli prosessori, virtuaalikone käyttää isäntäjärjestelmän fyysistä prosessoria
+/dev/sda: 64G VBOX HARDDISK eli virtuaalikoneen tallennustila
+Display: SVGA II ADAPTER eli virtuaalikoneen käyttämä näytönohjain/adapteri.
+Network: Gigabit Ethernet Controller, virtuaalikoneen verkkoyhteys verkkosovittimen kautta
+
