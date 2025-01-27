@@ -22,7 +22,7 @@ a) Ihan ensi töikseni asensin Micro-tekstinkäsittelyohjelman Ubuntu-virtuaalik
 Syötin komentokehotteeseen komennon  `sudo apt install micro`. 
 Asennussyöte rullasi ruudulla eteenpäin mallikkaasti, mutta tarkistin vielä onnistuiko asennus todella, käyttämällä komentoa `micro --version`.
 
-![Add file: Upload](ping(1).png)
+![Add file: Upload](ping (1).png)
 
 Ja siellähän se on! Testasin vielä ohjelman toimintaa luomalla tekstitiedoston komennolla `micro testitiedosto.txt`
 
