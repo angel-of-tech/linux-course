@@ -44,6 +44,7 @@ Kolmas ohjelma oli Nmap, jolla skannasin satunnaisen verkkosivun. Selvitin kysei
 kuva
 
 c) Kävin läpi Linux-järjestelmäni tärkeimmät kansiot noudattaen Tero Karvisen [Command Line Basics Revisited -artikkelia](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). 
+
 Aloitin juuresta, eli /, komennolla `ls /`.
 
 kuva
@@ -87,10 +88,16 @@ kuva
 Komento näyttää virtuaalikoneen raudan osat. Käydään läpi mitä tärkeimmät kohdat tuloksessa tarkoittavat. Käytin oman ymmärtämisen apuna Googlea, erityisesti tätä [sivua](https://linuxhandbook.com/lshw-command/)
 
 System: kertoo järjestelmän, tässä tapauksessa virtualisoidun järjestelmän eli VirtualBoxin.
+
 Bus: virtuaalikoneessa väylä on myös virtuaalinen, eli VirtualBox
+
 Memory: muisti, sekä system memory (4GB) että BIOS (128KB). BIOSin on pakko käyttää pieni osa muistista järjestelmän käynnistykseen.
+
 Processor: eli prosessori, virtuaalikone käyttää isäntäjärjestelmän fyysistä prosessoria
+
 /dev/sda: 64G VBOX HARDDISK eli virtuaalikoneen tallennustila
+
 Display: SVGA II ADAPTER eli virtuaalikoneen käyttämä näytönohjain/adapteri.
+
 Network: Gigabit Ethernet Controller, virtuaalikoneen verkkoyhteys verkkosovittimen kautta
 
