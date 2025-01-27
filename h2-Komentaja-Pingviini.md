@@ -22,68 +22,68 @@ a) Ihan ensi töikseni asensin Micro-tekstinkäsittelyohjelman Ubuntu-virtuaalik
 Syötin komentokehotteeseen komennon  `sudo apt install micro`. 
 Asennussyöte rullasi ruudulla eteenpäin mallikkaasti, mutta tarkistin vielä onnistuiko asennus todella, käyttämällä komentoa `micro --version`.
 
-![Add file: Upload](ping (1).png)
+![Add file: Upload](ping-(1).png)
 
 Ja siellähän se on! Testasin vielä ohjelman toimintaa luomalla tekstitiedoston komennolla `micro testitiedosto.txt`
 
-kuva
+![Add file: Upload](ping-(2).png)
 
 Ja taas toimi, ja pääsin kirjoittamaan tiedostoon onnistuneesti.
 
 b) Veikkasin, että asentaakseni kaikki kolme ohjelmaa, voin käyttää samaa komentoa kuin yksittäisen ohjelman asennukseen, ja laittaa kaikkien ohjelmien nimet komennon perään. Eli tässä tapauksessa `sude apt-get install cowsay nmap fortune-mod `. 
 Fortunen on tarkoitus antaa satunnainen lainaus tai hauska fakta. Luulin ohjelman olevan automaattisesti englanniksi, mutta käyttäessäni fortune-komentoa, kaikki teksti tulikin italiaksi, enkä osannut vaihtaa kieltä. Ongelman googlettaminenkaan ei tuottanut tulosta. Osaan kuitenkin jonkin verran italiaa, joten tämäkin tulos oli ihan hyväksyttävissä. 
 
-kuva
+![Add file: Upload](ping-(3).png)
 
 Seuraavaksi käytin Cowsayta ja laitoin ASCII-lehmän sanomaan jotain tärkeää.
 
-kuva
+![Add file: Upload](ping-(4).png)
 
 Kolmas ohjelma oli Nmap, jolla skannasin satunnaisen verkkosivun. Selvitin kyseisen palvelimen avoimet portit ja muita verkkoon liittyviä tietoja. Nmapia käytetään kyberturvallisuuspuolella paljon. 
 
-kuva
+![Add file: Upload](ping-(5).png)
 
 c) Kävin läpi Linux-järjestelmäni tärkeimmät kansiot noudattaen Tero Karvisen [Command Line Basics Revisited -artikkelia](https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited). 
 
 Aloitin juuresta, eli /, komennolla `ls /`.
 
-kuva
+![Add file: Upload](ping-(6).png)
 
 Sitten siirryin /home/, komennolla `ls /home`. Ja kotikansioni nimi on oma nimeni, eli veera. 
 
-kuva
+![Add file: Upload](ping-(7).png)
 
 Komennolla `ls /home/veera` pääsen näkemään mitä kansioita hakemistossa on.
 
-kuva
+![Add file: Upload](ping-(8).png)
 
 Komento `ls /etc` näyttää valtavan listan järjestelmän asetustiedostoja.
 
-kuva
+![Add file: Upload](ping-(9).png)
 
 Komento `ls /var/log/` puolestaan näyttää järjestelmän lokitiedostot.
 
-kuva
+![Add file: Upload](ping-(10).png)
 
 
 d) & e) Grep-komentoa käyttämällä voi etsiä tekstiä ja sanoja tiedostoista. Se on helppo tapa löytää tärkeä tieto isosta määrästä dataa, esimerkeiksi logeissa. (https://www.gnu.org/software/grep/manual/grep.html) 
 Loin nopeasti tekstitiedoston kopiomalla Dracula-kirjan ensimmäisen kappaleen [Gutenbergista](https://www.gutenberg.org/cache/epub/345/pg345-images.html), käyttäen komentoa `echo "teksti" > dracula.txt`. Sitten greppasin "you"-sanan esiintymismäärän tekstissä komennolla `grep -o "you" dracula.txt | wc -l`. Kommennosta näkee, että käytin myös putkimerkkiä. Putkimerkki ohjaa grep-komennon tulosteen seuraavalle komennolle. Tässä tapauksessa grep siis ensin tulostaa jokaisen "you"-sanan omalle rivilleen, ja putkimerkki siirtää tämän tulosteen wc-komennolle (word count), joka laskee rivien määrän.
 
-kuva
+![Add file: Upload](ping-(11).png)
 
 Koska luomani tekstitiedosto oli vain nopeasti netistä kopioitu, eivät "you"-sanat ole mitenkään siististi omilla riveillään. Käyttäessäni pelkkää grepiä, tulos oli siis tämä: 
 
-kuva
+![Add file: Upload](ping-(12).png)
 
 Ensimmäinen rivi, jolla "you" esiintyy, on siis hyvin pitkältä näyttävä seinä tekstiä. Komento kuitenkin toimi kuten piti.
 
 f) Asensin ensin lshw:n komennolla `sudo apt-get install lshw`
 
-kuva
+![Add file: Upload](ping-(13).png)
 
 Seuraavaksi ajoin komennon `sudo lshw -short -sanitize`. Tässä komennossa "sanitize" pitää huolen siitä, ettei näkyviin tule henkilökohtaisia tunnistetietoja, kuten IP-osoitteita.
 
-kuva
+![Add file: Upload](ping-(14).png)
 
 Komento näyttää virtuaalikoneen raudan osat. Käydään läpi mitä tärkeimmät kohdat tuloksessa tarkoittavat. Käytin oman ymmärtämisen apuna Googlea, erityisesti tätä [sivua](https://linuxhandbook.com/lshw-command/)
 
