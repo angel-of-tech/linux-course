@@ -47,11 +47,11 @@ c) Kävin läpi Linux-järjestelmäni tärkeimmät kansiot noudattaen Tero Karvi
 
 Aloitin juuresta, eli /, komennolla `ls /`.
 
-![Add file: Upload](ping-(6).png)
+![Add file: Upload](ping-(3).png)
 
 Sitten siirryin /home/, komennolla `ls /home`. Ja kotikansioni nimi on oma nimeni, eli veera. 
 
-![Add file: Upload](ping-(7).png)
+![Add file: Upload](ping-(4).png)
 
 Komennolla `ls /home/veera` pääsen näkemään mitä kansioita hakemistossa on.
 
@@ -79,11 +79,11 @@ Ensimmäinen rivi, jolla "you" esiintyy, on siis hyvin pitkältä näyttävä se
 
 f) Asensin ensin lshw:n komennolla `sudo apt-get install lshw`
 
-![Add file: Upload](ping-(13).png)
+![Add file: Upload](ping-(1).png)
 
 Seuraavaksi ajoin komennon `sudo lshw -short -sanitize`. Tässä komennossa "sanitize" pitää huolen siitä, ettei näkyviin tule henkilökohtaisia tunnistetietoja, kuten IP-osoitteita.
 
-![Add file: Upload](ping-(14).png)
+![Add file: Upload](ping-(2).png)
 
 Komento näyttää virtuaalikoneen raudan osat. Käydään läpi mitä tärkeimmät kohdat tuloksessa tarkoittavat. Käytin oman ymmärtämisen apuna Googlea, erityisesti tätä [sivua](https://linuxhandbook.com/lshw-command/)
 
