@@ -47,9 +47,9 @@ Tässä lokirivissä näkyy, että avasin pääsivun.
 
 • "GET / HTTP/1.1" = HTTP-pyyntö:
 
-  GET = Haetaan pääsivu (/).
-  
-  HTTP/1.1 = HTTP-protokollan versio.
+      GET = Haetaan pääsivu (/).
+      
+      HTTP/1.1 = HTTP-protokollan versio.
   
 • 200 = HTTP-vastauskoodi (OK, onnistunut pyyntö).
 
@@ -59,11 +59,11 @@ Tässä lokirivissä näkyy, että avasin pääsivun.
 
 • "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" = Käyttäjäagentti
 
-  Mozilla/5.0 = Standardisoitu selaintunniste.
-  
-  X11; Linux x86_64 = Käyttöjärjestelmä on Linux (64-bittinen).
-  
-  Firefox/128.0 = Selain on Firefox 128.
+      Mozilla/5.0 = Standardisoitu selaintunniste.
+      
+      X11; Linux x86_64 = Käyttöjärjestelmä on Linux (64-bittinen).
+      
+      Firefox/128.0 = Selain on Firefox 128.
 
 ### 2. rivi
 
