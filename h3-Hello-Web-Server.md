@@ -167,9 +167,14 @@ Ja siellähän se on, vaikkakin ääkköset puuttuvat.
 
 Tehdäkseni sivusta hieman tyylikkäämmän, kävin kirjoittamassa tiedostosta HTML5-version.
 
+![Add file: Upload](Picture10.png) 
+
 ---
 
 ### f) Curl ja curl -I
 
 Esimerkkejä curl-komennoista: 
+
+![Add file: Upload](Picture11.png) 
+![Add file: Upload](Picture12.png) 
 
