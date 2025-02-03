@@ -165,7 +165,7 @@ Ja siellähän se on, vaikkakin ääkköset puuttuvat.
 
 ### e) HTML5-sivu
 
-Tehdäkseni sivusta hieman tyylikkäämmän, kävin kirjoittamassa tiedostosta HTML5-version. Seuraavassa tehtävässä näkyy kuva koodista.
+Tehdäkseni sivusta hieman tyylikkäämmän, kävin kirjoittamassa tiedostosta HTML5-version. Seuraavassa tehtävässä näkyy kuva koodista. Käytin apuna W3 Schools -sivuston [tutoriaaleja](https://www.w3schools.com/html/html_intro.asp).
 
 ![Add file: Upload](Picture10.png) 
 
