@@ -8,7 +8,8 @@ Ja curl-komennon avulla tarkistin, vastaako webpalvelin localhostiin. Eli koment
 
 ![Add file: Upload](Picture2.png) 
 
-b)	Lokien rivit ja niiden analysointi
+### b)	Lokien rivit ja niiden analysointi
+
 Seuraavaksi latasin palvelimeltani yhden sivun, ja tarkastelin syntyneen lokin rivejä. 
 
 ![Add file: Upload](Picture3.png) 
