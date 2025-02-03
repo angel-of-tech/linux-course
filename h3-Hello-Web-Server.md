@@ -128,9 +128,13 @@ Sitten olikin aika testata toimisiko sivu. Menin selaimella osoitteeseen http://
 
 Ja siellähän se on, vaikkakin ääkköset puuttuvat.
 
+---
+
 ### e) HTML5-sivu
 
 Tehdäkseni sivusta hieman tyylikkäämmän, kävin kirjoittamassa tiedostosta HTML5-version.
+
+---
 
 ### f) Curl ja curl -I
 
