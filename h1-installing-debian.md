@@ -32,29 +32,29 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
 
   Pohjana Tero Karvinen 2024: Install Debian on Virtualbox, https://terokarvinen.com/2021/install-debian-on-virtualbox/
   
-  ![Add file: Upload](Picture1.png)
+  ![Add file: Upload](Picture.png)
   
   1. Latasin Debianin sivulta levykuvan, valitsin version debian-live-12.9.0-amd64-xfce.iso
      
-  ![Add file: Upload](Picture2.png)
+  ![Add file: Upload](Picture.png)
 
   2. Vein levykuvan VirtualBoxiin, joka minulla oli jo ennestään asennettuna. Klikkasin itseni Expert Modeen, jolloin enemmän asetuksia tulee näkyviin. Ruksitin “Skip Unattended Installation” ja valitsin versioksi Debian (64-bit).
      
-  ![Add file: Upload](Picture3.png)
+  ![Add file: Upload](Picture.png)
   
   3. Hardware-välilehdeltä muutin muistin määräksi 4000 MB.
   
-  ![Add file: Upload](Picture4.png)
+  ![Add file: Upload](Picture.png)
 
   4. Hard Disk -välilehdeltä muutin levytilaksi 60 GB.
 
-  ![Add file: Upload](Picture5.png)
+  ![Add file: Upload](Picture.png)
 
   5. Testasin virtuaalikoneen toimintaa kirjoittamalla selaimen osoitekenttään satunnaisen nettisivun. Toimii!
   
   6. Sitten klikkasin itseni työpöydän Installeriin ja muutin esimerkiksi keyboard layoutin suomenkieliseksi. Lisäksi nimesin itseni ja koneeni. Valitsin tietysti erittäin vahvan salasanan.
      
-  ![Add file: Upload](Picture7.png)
+  ![Add file: Upload](Picture.png)
 
      
   7. Seuraavaksi päivittelin kaiken tarpeellisen käyttämällä seuraavia komentoja:
@@ -66,7 +66,7 @@ Näytönohjain (GPU): NVIDIA GeForce RTX 3060 Ti.
   8. Sitten päätin vielä asentaa tekstieditorin, eli Vimin. Käytin seuraavaa komentoa:
      $ sudo apt install vim
      
- ![Add file: Upload](Picture6.png)
+ ![Add file: Upload](Picture.png)
 
  Ja asennus toimi! Pääsin luomaan "hienotiedosto"-nimisen tiedoston ja kirjoittamaan siihen komennolla:
     $ vim hienotiedosto
