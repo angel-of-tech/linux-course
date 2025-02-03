@@ -40,18 +40,30 @@ IP address - Username - Timestamp - "HTTP request" HTTP status code Content leng
 Tässä lokirivissä näkyy, että avasin pääsivun.
 
 • 127.0.0.1 = Pyyntö tuli localhostista.
+
 • - - = Ei autentikaatiota (käyttäjätunnusta).
+
 • [02/Feb/2025:15:37:15 +0200] = Aikaleima.
+
 • "GET / HTTP/1.1" = HTTP-pyyntö:
-GET = Haetaan pääsivu (/).
-HTTP/1.1 = HTTP-protokollan versio.
-200 = HTTP-vastauskoodi (OK, onnistunut pyyntö).
-3380 = Vastauksen koko (3380 tavua).
+
+  GET = Haetaan pääsivu (/).
+  
+  HTTP/1.1 = HTTP-protokollan versio.
+  
+• 200 = HTTP-vastauskoodi (OK, onnistunut pyyntö).
+
+• 3380 = Vastauksen koko (3380 tavua).
+
 • "-" = Ei refereriä (ei tultu toiselta sivulta).
-• "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" = Käyttäjäagentti:
-• Mozilla/5.0 = Standardisoitu selaintunniste.
-• X11; Linux x86_64 = Käyttöjärjestelmä on Linux (64-bittinen).
-• Firefox/128.0 = Selain on Firefox 128.
+
+• "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" = Käyttäjäagentti
+
+  Mozilla/5.0 = Standardisoitu selaintunniste.
+  
+  X11; Linux x86_64 = Käyttöjärjestelmä on Linux (64-bittinen).
+  
+  Firefox/128.0 = Selain on Firefox 128.
 
 ### 2. rivi
 
@@ -60,12 +72,19 @@ HTTP/1.1 = HTTP-protokollan versio.
 Tällä rivillä ladataan kuva, joka on Apachen sivulla. Tässä tapauksessa se on logo. 
 
 • 127.0.0.1 = Pyyntö tuli localhostista.
+
 • - - = Ei autentikaatiota (käyttäjätunnusta).
+
 • [02/Feb/2025:15:37:15 +0200] = Aikaleima.
+
 • GET /icons/openlogo-75.png = Selain haki kuvatiedoston /icons/openlogo-75.png.
+
 • 200 = Pyyntö onnistui.
+
 • 6040 = Vastauksen koko on 6040 tavua.
+
 • "http://localhost/" = Referer, kuva haettiin pääsivulta.
+
 • "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" = Sama selain kuin aiemmin.
 
 ### 3. rivi
@@ -75,12 +94,19 @@ Tällä rivillä ladataan kuva, joka on Apachen sivulla. Tässä tapauksessa se 
 Tässä rivillä selain yrittää etsiä faviconin, muttei löydä sitä ja palauttaa siksi 404. 
 
 • 127.0.0.1 = Pyyntö tuli localhostista.
+
 • - - = Ei autentikaatiota (käyttäjätunnusta).
+
 • [02/Feb/2025:15:37:15 +0200] = Aikaleima.
+
 • GET /favicon.ico = Selain yritti hakea favicon.ico-tiedoston.
-• 404 = Tiedostoa ei löytynyt (Not Found).
+
+• 404 = Tiedostoa ei löytynyt.
+
 • 487 = 487 tavun kokoinen virhesivu palautettiin.
+
 • "http://localhost/" = Referer, tämä pyyntö lähetettiin pääsivulta.
+
 • "Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" = Sama selain.
 
 ### 4. rivi
@@ -90,12 +116,19 @@ Tässä rivillä selain yrittää etsiä faviconin, muttei löydä sitä ja pala
 Tällä rivillä näkyy, että tein testipyynnön käyttämällä curl-komentoa.
 
 • 127.0.0.1 = Pyyntö tuli localhostista.
+
 • - - = Ei autentikaatiota (käyttäjätunnusta).
+
 • [02/Feb/2025:15:37:15 +0200] = Aikaleima.
+
 • HEAD / = HEAD-pyyntö (vain HTTP-otsikot, ilman sisältöä).
+
 • 200 = Pyyntö onnistui.
+
 • 255 = 255 tavua palautettiin.
+
 • "-" = No referer (ei tultu toiselta sivulta).
+
 • "curl/7.88.1" = Käyttäjäagentti on curl, eli tämä pyyntö tehtiin komentoriviltä.
 
 ---
