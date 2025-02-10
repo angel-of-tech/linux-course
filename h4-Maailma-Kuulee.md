@@ -28,9 +28,9 @@ Muutama tiivistetty kohta Tero Karvisen artikkelista [First Steps on a New Virtu
 
 Vuokrasin pilvipalvelimen [UpCloud](https://upcloud.com/) -sivustolta. Halusin palvelimen Suomesta, ja UpCloud on suomalainen palveluntarjoaja. 
 
-![Add file: Upload](maailma1).png)
+![Add file: Upload](maailma1.png)
 
-![Add file: Upload](maailma2).png)
+![Add file: Upload](maailma2.png)
 
 ![Add file: Upload](maailma3).png)
 
