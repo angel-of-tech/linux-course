@@ -53,6 +53,10 @@ Networkissa tarkistin vain että sekä IPv4 että IPv6 on valittuina.
 
 Tein SSH-avaimen palvelimelle salasanan sijaan.
 
+![Add file: Upload](maailma18.png)
+
+Deploy server ja palvelin on päällä!
+
 ### b) / c)
 
 ![Add file: Upload](maailma7.png)
