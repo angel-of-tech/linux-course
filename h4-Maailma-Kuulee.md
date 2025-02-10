@@ -32,57 +32,57 @@ Vuokrasin pilvipalvelimen [UpCloud](https://upcloud.com/) -sivustolta. Halusin p
 
 ![Add file: Upload](maailma2.png)
 
-![Add file: Upload](maailma3).png)
+![Add file: Upload](maailma3.png)
 
-![Add file: Upload](maailma4).png)
+![Add file: Upload](maailma4.png)
 
-![Add file: Upload](maailma5).png)
+![Add file: Upload](maailma5.png)
 
-![Add file: Upload](maailma6).png)
+![Add file: Upload](maailma6.png)
 
 
 ### b) / c)
 
-![Add file: Upload](maailma7).png)
+![Add file: Upload](maailma7.png)
 
 Menin SSH ja rootin kautta serverin IP:lle. 
 
-![Add file: Upload](maailma8).png)
+![Add file: Upload](maailma8.png)
  
 Asensin palomuurin käyttämällä komentoa sudo apt update && sudo apt install ufw -y
 
-![Add file: Upload](maailma9).png)
+![Add file: Upload](maailma9.png)
  
 Sitten reikä SSH:lle, jonka jälkeen enabloin palomuurin.
 
-![Add file: Upload](maailma10).png)
+![Add file: Upload](maailma10.png)
  
 Palomuuri päällä.
 
-![Add file: Upload](maailma11).png)
+![Add file: Upload](maailma11.png)
 
 Olinkin jo jäsen osassa ryhmiä. Lisäsin itseni adm-ryhmään. 
 
-![Add file: Upload](maailma12).png)
+![Add file: Upload](maailma12.png)
 
 Lukitsin rootin.
 
-![Add file: Upload](maailma13).png)
+![Add file: Upload](maailma13.png)
  
 Sitten päivitin ohjelmat komennolla sudo apt upgrade.
 
-![Add file: Upload](maailma14).png)
+![Add file: Upload](maailma14.png)
  
 Tarkistin vielä mitkä portit olikaan sallittu. 
 
-![Add file: Upload](maailma15).png)
+![Add file: Upload](maailma15.png)
 
 Nyt palvelimen IP johdattaa meidät Apachen testisivulle.
 
-![Add file: Upload](maailma16).png)
+![Add file: Upload](maailma16.png)
 
 Tein vaatimattoman uuden testisivun ja uudelleenkäynnistin Apachen. 
 
-![Add file: Upload](maailma17).png)
+![Add file: Upload](maailma17.png)
 
 Ja sehän toimii!
