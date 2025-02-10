@@ -30,16 +30,27 @@ Vuokrasin pilvipalvelimen [UpCloud](https://upcloud.com/) -sivustolta. Halusin p
 
 ![Add file: Upload](maailma1.png)
 
+Ensin valitaan serverin maa, valitsin tosiaan Suomen.
+
 ![Add file: Upload](maailma2.png)
+
+Sitten valitaan muistin ja tallennustilan määrä. Valitsin halvimman vaihtoehdon.
 
 ![Add file: Upload](maailma3.png)
 
+Storage-kohtaan en tehnyt muutoksia.
+
 ![Add file: Upload](maailma4.png)
+
+OS-kohdassa valitsin saman käyttöjärjestelmän kuin virtuaalikoneessani, eli Debian Bookwormin.
 
 ![Add file: Upload](maailma5.png)
 
+Networkissa tarkistin vain että sekä IPv4 että IPv6 on valittuina.
+
 ![Add file: Upload](maailma6.png)
 
+Tein SSH-avaimen palvelimelle salasanan sijaan.
 
 ### b) / c)
 
