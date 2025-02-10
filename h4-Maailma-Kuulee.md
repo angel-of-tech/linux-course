@@ -4,11 +4,11 @@
 Muutama tiivistetty kohta Susanna Lehdon artikkelista [Teoriasta käytäntöön pilvipalvelimen avulla (h4)](https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/):
 
 - Autentikointiin voi valita salasanan, mutta SSH-avaimia suositellaan.
-- 
+
 - Palvelin suojataan palomuurilla, ja verkkosivujen toimintaa varten HTTP ja HTTPS-liikenne tulee avata.
-- 
+
 - Muut portit kannattaa sulkea tietoturvan takaamiseksi.
-- 
+
 - Tietoturvan kannalta myös ohjelmistojen päivitykset tulisi tehdä säännöllisesti.
 
   
