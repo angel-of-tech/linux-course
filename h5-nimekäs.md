@@ -19,7 +19,7 @@ Seuraavat tehtävät teen kunnolla loppuun, kunhan DNS päivittyy. Mutta teen se
 ---
 
 ### Based
-Loin directoryn sivulleni komennolla mkdir /home/veera/angeloftech.com
+Loin directoryn sivulleni komennolla `mkdir /home/veera/angeloftech.com`
 
 ![Add file: Upload](e4.png)
 
@@ -41,13 +41,13 @@ Menemällä sivulleni, tulee ainakin jotain näkyviin. Tämä on jo positiivinen
 ---
 
 ### Kotisivujen tekeminen
-Sitten tein kansion kotisivujeni kolmelle html-sivulle komennolla sudo mkdir -p /var/www/angeloftech.com/public_html
-Loin oman käyttäjäni omistaman kansio (ei pääkäyttäjän oikeuksia) komennolla sudo chown -R veera:veera /var/www/angeloftech.com/public_html
+Sitten tein kansion kotisivujeni kolmelle html-sivulle komennolla `sudo mkdir -p /var/www/angeloftech.com/public_html`
+Loin oman käyttäjäni omistaman kansio (ei pääkäyttäjän oikeuksia) komennolla `sudo chown -R veera:veera /var/www/angeloftech.com/public_html`
 Sitten menin GitHub-repositoriooni ja latasin kaikki kotisivuni tiedostot ZIP-tiedostona. 
 
 ![Add file: Upload](e8.png)
  
-Purin tiedostot epähuomiossa omaan alikansioonsa, noudin ne sieltä komennolla sudo mv /var/www/angeloftech.com/public_html/angel-of-tech.github.io-main/* /var/www/angeloftech.com/public_html/
+Purin tiedostot epähuomiossa omaan alikansioonsa, noudin ne sieltä komennolla `sudo mv /var/www/angeloftech.com/public_html/angel-of-tech.github.io-main/* /var/www/angeloftech.com/public_html/`
 (Jatkan tätä kunhan pystyn varmistamaan että kaikki näkyy sivulla kuten pitää)
 
 ---
@@ -67,41 +67,41 @@ Sitten kävin lisäämässä alidomainit Cloudflareen. Nyt alidomainit tosiaan o
 ### Host- ja dig-komentojen käyttö
 
 1. Huomasin heti, ettei host-komentoa löydy. Asensin sen siis ensitöikseni, sekä päivitin ohjelmistot. 
-sudo apt update
-sudo apt install dnsutils
+`sudo apt update`
+`sudo apt install dnsutils`
 
 ![Add file: Upload](e11.png)
  
 Nyt manuaalista löytyy sekä host että dig. Tutkin dig-komentoa tarkemmin. 
-Suorittaessani komennon host angeloftech.com mitään ei tapahdu.
+Suorittaessani komennon `host angeloftech.com` mitään ei tapahdu.
 
 ![Add file: Upload](e12.png)
  
-Dig angeloftech.com tuottaa kuitenkin enemmän tulosta. Tuloksesta näkee, että domain on olemassa, mutta se ei vielä osoita minnekään (ANSWER: 0). Tämä toivottavasti korjaantuu pian kunhan DNS-tietue päivittyy.
+`Dig angeloftech.com` tuottaa kuitenkin enemmän tulosta. Tuloksesta näkee, että domain on olemassa, mutta se ei vielä osoita minnekään (ANSWER: 0). Tämä toivottavasti korjaantuu pian kunhan DNS-tietue päivittyy.
 
-2. host terokarvinen.com
+2. `host terokarvinen.com`
 
 ![Add file: Upload](e13.png)
  
 Vastaus antaa sivun IP:n ja sähköpostipalvelimen.
-dig terokarvinen.com
+`dig terokarvinen.com`
 
 ![Add file: Upload](e14.png)
  
 Vastauksesta ilmenee ainakin seuraavat tärkeät seikat:
-terokarvinen.com. 10800 IN A 139.162.131.217 kertoo, että terokarvinen.com on liitetty IP-osoitteeseen 139.162.131.217.
-Query time: 51 msec kertoo, että kyselyn saaminen kesti 51 millisekuntia.
-3. host google.com
+`terokarvinen.com. 10800 IN A 139.162.131.217` kertoo, että terokarvinen.com on liitetty IP-osoitteeseen 139.162.131.217.
+`Query time: 51 msec` kertoo, että kyselyn saaminen kesti 51 millisekuntia.
+3. `host google.com`
 
 ![Add file: Upload](e15.png)
  
-Ja dig google.com
+Ja `dig google.com`
 
 ![Add file: Upload](e16.png)
  
 Vastauksesta ilmenee muun muassa seuraavat asiat:
-google.com. 212 IN A 216.58.210.142 kertoo, että google.com-verkkotunnus on liitetty IP-osoitteeseen 216.58.210.142.
-Query time: 20 msec kertoo, että DNS-kysely suoritettiin onnistuneesti ja nopeasti 20 millisekunnissa.
+`google.com. 212 IN A 216.58.210.142` kertoo, että google.com-verkkotunnus on liitetty IP-osoitteeseen 216.58.210.142.
+`Query time: 20 msec` kertoo, että DNS-kysely suoritettiin onnistuneesti ja nopeasti 20 millisekunnissa.
 
 ---
 
