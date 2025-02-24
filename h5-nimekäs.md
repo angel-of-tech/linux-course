@@ -6,13 +6,13 @@ Minulla on muutama domain jo hallussa aikaisempien projektieni ansiosta. En kuit
 Cloudflare skannaa DNS-tietueet automaattisesti, mutta ei tietenkään löytänyt domainistani vielä mitään. Minun piti siis lisätä ne manuaalisesti Cloudflareen.
  
 Menin DNS management -sivulle, jonne syötin uudet CNAME-tiedot. CNAME ohjaa automaattisesti päädomainin osoitteeseen ilman, että minun tarvitsee päivittää IP:tä erikseen.
- 
+
 Sitten palasin Domainhotelliin vaihtamaan nameserverit Cloudflaren antamiin nameservereihin. Muutoksilla saattaa kestää kauankin ennen kuin ne tulevat näkyviin. Pysyin siis kärsivällisenä. 
 Seuraavat tehtävät teen kunnolla loppuun, kunhan DNS päivittyy. Mutta teen sen minkä pystyn nyt.
----
-b)	Based
+
+### Based
 Loin directoryn sivulleni komennolla mkdir /home/veera/angeloftech.com
- 
+---
 Loin directoryyn index.html-sivun, jonne copy pastesin vanhan kotisivuni koodin. 
 Seuraavaksi varmistin, että Apache-konfiguraatio on asetettu niin, että se osoittaa kotisivukansioon, jossa index.html-tiedosto sijaitsee.  
  
@@ -22,22 +22,20 @@ Aktivoin uuden sivuston ja käynnistin Apachen uudelleen järjestelmän ohjeiden
  
 Menemällä sivulleni, tulee ainakin jotain näkyviin. Tämä on jo positiivinen asia. Odottelen siis, että DNS-tietueet päivittyvät, ja kokeilen uudestaan.
 ---
-c)	Kotisivu
+### Kotisivujen tekeminen
 Sitten tein kansion kotisivujeni kolmelle html-sivulle komennolla sudo mkdir -p /var/www/angeloftech.com/public_html
 Loin oman käyttäjäni omistaman kansio (ei pääkäyttäjän oikeuksia) komennolla sudo chown -R veera:veera /var/www/angeloftech.com/public_html
 Sitten menin GitHub-repositoriooni ja latasin kaikki kotisivuni tiedostot ZIP-tiedostona. 
  
 Purin tiedostot epähuomiossa omaan alikansioonsa, noudin ne sieltä komennolla sudo mv /var/www/angeloftech.com/public_html/angel-of-tech.github.io-main/* /var/www/angeloftech.com/public_html/
 (Jatkan tätä kunhan pystyn varmistamaan että kaikki näkyy sivulla kuten pitää)
-
-d) 
+---
+### Alidomainit
  
 Lisäsin alidomainit muokkaamalla conf-tiedostoa ja laittamalla alidomainit serverin aliaksiksi. 
  
 Sitten kävin lisäämässä alidomainit Cloudflareen. Nyt alidomainit tosiaan osoittavat samalle sivulle kuin angeloftech.com. Testaan toimivatko alidomainit sitten kun DNS-tietueet ovat toiminnassa.
-
---- 
-
+---
 ### Host- ja dig-komentojen käyttö
 
 1. Huomasin heti, ettei host-komentoa löydy. Asensin sen siis ensitöikseni, sekä päivitin ohjelmistot. 
@@ -64,6 +62,7 @@ Ja dig google.com
 Vastauksesta ilmenee muun muassa seuraavat asiat:
 google.com. 212 IN A 216.58.210.142 kertoo, että google.com-verkkotunnus on liitetty IP-osoitteeseen 216.58.210.142.
 Query time: 20 msec kertoo, että DNS-kysely suoritettiin onnistuneesti ja nopeasti 20 millisekunnissa.
-Lähteet:
+---
+**Lähteet:
 
 Tero Karvisen kotitehtävävinkit h5-tehtävän alla
