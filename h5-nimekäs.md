@@ -66,8 +66,10 @@ Sitten kävin lisäämässä alidomainit Cloudflareen. Nyt alidomainit tosiaan o
 
 ### Host- ja dig-komentojen käyttö
 
-1. Huomasin heti, ettei host-komentoa löydy. Asensin sen siis ensitöikseni, sekä päivitin ohjelmistot. 
+1. Huomasin heti, ettei host-komentoa löydy. Asensin sen siis ensitöikseni, sekä päivitin ohjelmistot.
+   
 `sudo apt update`
+
 `sudo apt install dnsutils`
 
 ![Add file: Upload](e11.png)
@@ -90,7 +92,9 @@ Vastaus antaa sivun IP:n ja sähköpostipalvelimen.
  
 Vastauksesta ilmenee ainakin seuraavat tärkeät seikat:
 `terokarvinen.com. 10800 IN A 139.162.131.217` kertoo, että terokarvinen.com on liitetty IP-osoitteeseen 139.162.131.217.
+
 `Query time: 51 msec` kertoo, että kyselyn saaminen kesti 51 millisekuntia.
+
 3. `host google.com`
 
 ![Add file: Upload](e15.png)
@@ -101,10 +105,17 @@ Ja `dig google.com`
  
 Vastauksesta ilmenee muun muassa seuraavat asiat:
 `google.com. 212 IN A 216.58.210.142` kertoo, että google.com-verkkotunnus on liitetty IP-osoitteeseen 216.58.210.142.
+
 `Query time: 20 msec` kertoo, että DNS-kysely suoritettiin onnistuneesti ja nopeasti 20 millisekunnissa.
 
 ---
 
 **Lähteet:
 
-Tero Karvisen kotitehtävävinkit h5-tehtävän alla
+Create Subdomain Records: https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-subdomain/
+
+Differences Between A and CNAME Records: https://support.dnsimple.com/articles/differences-a-cname-records/ 
+
+Tero Karvinen, Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address: https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+
+Tero Karvisen kotitehtävävinkit [h5-tehtävän](https://terokarvinen.com/linux-palvelimet/#h5-nimekas) alla
