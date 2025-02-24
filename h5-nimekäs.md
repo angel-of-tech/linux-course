@@ -12,7 +12,9 @@ Seuraavat tehtävät teen kunnolla loppuun, kunhan DNS päivittyy. Mutta teen se
 
 ### Based
 Loin directoryn sivulleni komennolla mkdir /home/veera/angeloftech.com
+
 ---
+
 Loin directoryyn index.html-sivun, jonne copy pastesin vanhan kotisivuni koodin. 
 Seuraavaksi varmistin, että Apache-konfiguraatio on asetettu niin, että se osoittaa kotisivukansioon, jossa index.html-tiedosto sijaitsee.  
  
@@ -21,7 +23,9 @@ Avasin Apache-konfiguraatiotiedosto ja lisäsin kuvan mukaisen konfiguraation.
 Aktivoin uuden sivuston ja käynnistin Apachen uudelleen järjestelmän ohjeiden mukaisesti (Apachen olisi siis voinut käynnistää ennen sivun aktivointia). 
  
 Menemällä sivulleni, tulee ainakin jotain näkyviin. Tämä on jo positiivinen asia. Odottelen siis, että DNS-tietueet päivittyvät, ja kokeilen uudestaan.
+
 ---
+
 ### Kotisivujen tekeminen
 Sitten tein kansion kotisivujeni kolmelle html-sivulle komennolla sudo mkdir -p /var/www/angeloftech.com/public_html
 Loin oman käyttäjäni omistaman kansio (ei pääkäyttäjän oikeuksia) komennolla sudo chown -R veera:veera /var/www/angeloftech.com/public_html
@@ -29,13 +33,17 @@ Sitten menin GitHub-repositoriooni ja latasin kaikki kotisivuni tiedostot ZIP-ti
  
 Purin tiedostot epähuomiossa omaan alikansioonsa, noudin ne sieltä komennolla sudo mv /var/www/angeloftech.com/public_html/angel-of-tech.github.io-main/* /var/www/angeloftech.com/public_html/
 (Jatkan tätä kunhan pystyn varmistamaan että kaikki näkyy sivulla kuten pitää)
+
 ---
+
 ### Alidomainit
  
 Lisäsin alidomainit muokkaamalla conf-tiedostoa ja laittamalla alidomainit serverin aliaksiksi. 
  
 Sitten kävin lisäämässä alidomainit Cloudflareen. Nyt alidomainit tosiaan osoittavat samalle sivulle kuin angeloftech.com. Testaan toimivatko alidomainit sitten kun DNS-tietueet ovat toiminnassa.
+
 ---
+
 ### Host- ja dig-komentojen käyttö
 
 1. Huomasin heti, ettei host-komentoa löydy. Asensin sen siis ensitöikseni, sekä päivitin ohjelmistot. 
@@ -62,7 +70,9 @@ Ja dig google.com
 Vastauksesta ilmenee muun muassa seuraavat asiat:
 google.com. 212 IN A 216.58.210.142 kertoo, että google.com-verkkotunnus on liitetty IP-osoitteeseen 216.58.210.142.
 Query time: 20 msec kertoo, että DNS-kysely suoritettiin onnistuneesti ja nopeasti 20 millisekunnissa.
+
 ---
+
 **Lähteet:
 
 Tero Karvisen kotitehtävävinkit h5-tehtävän alla
