@@ -112,10 +112,10 @@ Vastauksesta ilmenee muun muassa seuraavat asiat:
 
 ### Lähteet:
 
-Create Subdomain Records: https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-subdomain/
+Create Subdomain Records: [https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-subdomain/](https://support.dnsimple.com/articles/differences-a-cname-records/)
 
-Differences Between A and CNAME Records: https://support.dnsimple.com/articles/differences-a-cname-records/ 
+Differences Between A and CNAME Records: [https://support.dnsimple.com/articles/differences-a-cname-records/](https://support.dnsimple.com/articles/differences-a-cname-records/)
 
-Tero Karvinen, Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address: https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/
+Tero Karvinen, Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address: [https://terokarvinen.com/2018/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/](https://support.dnsimple.com/articles/differences-a-cname-records/)
 
 Tero Karvisen kotitehtävävinkit [h5-tehtävän](https://terokarvinen.com/linux-palvelimet/#h5-nimekas) alla
