@@ -27,4 +27,4 @@ Sitten hankin ja asensin sertifikaatin komennolla sudo certbot --apache. Seurasi
 
 ![Add file: Upload](Sala2.png)
 
-No sittenpä tulikin vastaan ongelma, nimittäin sen minkä taakseen jättää, sen edestään eittämättä löytää. En siis ollut viime viikolla saanut domainia toimintaan, joten eihän sertifikaatin asennus tietenkään onnistunut. 
+No sittenpä tulikin vastaan ongelma, nimittäin sen minkä taakseen jättää, sen edestään eittämättä löytää. En siis ollut viime viikolla saanut domainia toimintaan, joten eihän sertifikaatin asennus tietenkään onnistunut. Huoh! No pakkohan tämä on hoitaa kuntoon. 
