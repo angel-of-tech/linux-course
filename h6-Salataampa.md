@@ -27,4 +27,41 @@ Sitten hankin ja asensin sertifikaatin komennolla sudo certbot --apache. Seurasi
 
 ![Add file: Upload](Sala2.png)
 
-No sittenpä tulikin vastaan ongelma, nimittäin sen minkä taakseen jättää, sen edestään eittämättä löytää. En siis ollut viime viikolla saanut domainia toimintaan, joten eihän sertifikaatin asennus tietenkään onnistunut. Huoh! No pakkohan tämä on hoitaa kuntoon. 
+No sittenpä tulikin vastaan ongelma, nimittäin sen minkä taakseen jättää, sen edestään eittämättä löytää. En siis ollut viime viikolla saanut domainia toimintaan, joten eihän sertifikaatin asennus tietenkään onnistunut. Huoh! No pakkohan tämä on hoitaa kuntoon. Sitä ennen kuitenkin teen vapaaehtoisen web-lomaketehtävän, jotta saan nyt edes jotain palautettua kotitehtäväksi:
+
+## c) Vapaaehtoinen web-lomake
+
+![Add file: Upload](Sala3.png)
+
+Loin ensin hyvin yksinkertaisen HTML-lomakkeen komennolla `sudo nano /var/www/html/login.html` ja kirjoittamalla tarpeellisen koodin tiedostoon. 
+
+![Add file: Upload](Sala4.png)
+
+Jotta lomake pystytään käsittelemään, tarvitaan PHP-koodi. Katsoin koodeihin apuja [freeCodeCampista](https://www.freecodecamp.org/news/creating-html-forms/).
+
+![Add file: Upload](Sala5.png)
+
+Lomake löytyy testisivulta ja näyttää hyvältä.
+
+Liikenteen nappaamiseksi asensin ngrepin komennolla `sudo apt install ngrep`. Sitten lähdin nappaamaan liikennettä komennolla `sudo ngrep -d any -W byline 'GET|POST' tcp and port 80`. Katsoin ohjeita komennon käyttöön [Geeks for Geeks](https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/) -sivulta.
+
+![Add file: Upload](Sala6.png)
+
+Komennon vastauksessa näkyy käyttäjätunnus ja salasana selväkielisenä. Tämä ei tietenkään ole hyvä. HTTP-yhteys ei ole salattu, joten salasanat ja muut lomaketiedot voivat helposti joutua verkkohyökkäyksen kohteeksi. Salasanat tulisi aina lähettää suojatun yhteyden yli. Lomakedatassa ei myöskään tulisi lähettää arkaluontoisia tietoja, kuten salasanoja, selväkielisinä, vaan ne pitäisi tiivistää ja suolata kirjautumisen yhteydessä. 
+
+## b) A-rating
+
+Sitten testasin satunnaisen nettisivun TLS:n [SSLLabsilla](https://www.ssllabs.com/ssltest/). 
+
+![Add file: Upload](Sala7.png)
+
+Valitsemani sivu terokarvinen.com sai arvosanakseen B:n, eli melkoisen hyvän. Protocol support näyttäisi tuovan arvosanaa alaspäin. Palvelin ilmeisesti tukee vanhoja TLS 1.0 ja TLS 1.1 -protokollia. TLS 1.2, TLS 1.1 ja TLS 1.0 -versioille on listattu useita WEAK merkittyjä salauskokonaisuuksia (CBC-SHA), jotka heikentävät turvallisuutta. Sivuston turvallisuutta ja siten SSL Labs -arvosanaa saisi siis nostettua poistamalla tuki vanhentuneilta protokollilta.
+
+## Lähteet: 
+
+freeCodeCamp, How to Create a Simple HTML and PHP Form 2023: https://www.freecodecamp.org/news/creating-html-forms/
+Geeks for Geeks, Ngrep – Network Packet Analyzer for Linux 2021: https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/
+
+
+
+
