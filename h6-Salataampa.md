@@ -1,7 +1,7 @@
 ## x) Tiivistelmät
 
 Pikainen tiivistys Let's Encryptin [How It Works](https://letsencrypt.org/how-it-works/)-artikkelista:
-- Let's Encrypt enables automatic issuance and management of HTTPS server certificates.
+- Let's Encrypt enables automatic issuing and managing of HTTPS server certificates.
 - The agent must prove they have control over the domain using either DNS records or an HTTP resource.
 - Requesting, renewing, and revoking certificates is done using an authorized key pair.
 
@@ -19,11 +19,11 @@ Pikainen tiivistys The Apache Software Foundationin artikkelista Apache HTTP Ser
 
 ## a) Let's
 
-Ensin suoritin komennon sudo apt update && sudo apt install certbot python3-certbot-apache, jolla siis asensin certbotin. Certbot on Let’s Encryptin virallinen asiakasohjelma. 
+Ensin suoritin komennon `sudo apt update && sudo apt install certbot python3-certbot-apache`, jolla siis asensin certbotin. Certbot on Let’s Encryptin virallinen asiakasohjelma. 
 
 ![Add file: Upload](Sala1.png)
 
-Sitten hankin ja asensin sertifikaatin komennolla sudo certbot --apache. Seurasin ruudulle ilmestyviä ohjeita. Syötin oman sähköpostiosoitteeni (tässä kohtaa kannattaa olla kärsivällinen, luulin ensin että komentorivi jumittui, mutta sillä kestikin vain aikansa kunnes vastasi) ja valitsin sen domainin, jolle halusin sertifikaatin, eli angeloftech.com.
+Sitten hankin ja asensin sertifikaatin komennolla `sudo certbot --apache`. Seurasin ruudulle ilmestyviä ohjeita. Syötin oman sähköpostiosoitteeni (tässä kohtaa kannattaa olla kärsivällinen, luulin ensin että komentorivi jumittui, mutta sillä kestikin vain aikansa kunnes vastasi) ja valitsin sen domainin, jolle halusin sertifikaatin, eli angeloftech.com.
 
 ![Add file: Upload](Sala2.png)
 
