@@ -6,7 +6,7 @@ Pikainen tiivistys Let's Encryptin [How It Works](https://letsencrypt.org/how-it
 - Requesting, renewing, and revoking certificates is done using an authorized key pair.
 
 
-Pikainen tiivistys Lange 2024: Lego: Obtain a Certificate:[Using an existing, running web server]https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server) -artikkelista:
+Pikainen tiivistys Lange 2024: Lego: Obtain a Certificate:[Using an existing, running web server](https://go-acme.github.io/lego/usage/cli/obtain-a-certificate/index.html#using-an-existing-running-web-server) -artikkelista:
 - If a web server is already running on port 80, the `--http` option requires `--http.webroot`
 - The `--http.webroot` option specifies the directory where Lego writes the http-01 challenge token to the `.well-known/acme-challenge` folder.
 - Ensure the specified webroot directory is publicly accessible as the root directory (`/`) for validation purposes.
@@ -59,8 +59,9 @@ Valitsemani sivu terokarvinen.com sai arvosanakseen B:n, eli melkoisen hyvän. P
 
 ## Lähteet: 
 
-freeCodeCamp, How to Create a Simple HTML and PHP Form 2023: https://www.freecodecamp.org/news/creating-html-forms/
-Geeks for Geeks, Ngrep – Network Packet Analyzer for Linux 2021: https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/
+freeCodeCamp, How to Create a Simple HTML and PHP Form 2023: [https://www.freecodecamp.org/news/creating-html-forms/]( https://www.freecodecamp.org/news/creating-html-forms/)
+
+Geeks for Geeks, Ngrep – Network Packet Analyzer for Linux 2021: [https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/](https://www.geeksforgeeks.org/ngrep-network-packet-analyzer-for-linux/)
 
 
 
