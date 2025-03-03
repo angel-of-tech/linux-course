@@ -12,7 +12,7 @@ Pikainen tiivistys Lange 2024: Lego: Obtain a Certificate:[Using an existing, ru
 - Ensure the specified webroot directory is publicly accessible as the root directory (`/`) for validation purposes.
 - Execute the Lego command with `--accept-tos`, `--email`, `--http`, `--http.webroot`, and `--domains` options to obtain certificates.
 
-Pikainen tiivistys The Apache Software Foundationin artikkelista [Apache HTTP Server Version 2.4 [Official] Documentation: SSL/TLS Strong Encryption: How-To: [Basic Configuration Example](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample)](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample):
+Pikainen tiivistys The Apache Software Foundationin artikkelista Apache HTTP Server Version 2.4 Official Documentation: SSL/TLS Strong Encryption: How-To: [Basic Configuration Example](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample):
 - Load the SSL module
 - Enable listening on port 443
 - Define a virtual host for HTTPS
