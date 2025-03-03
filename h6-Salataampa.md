@@ -21,6 +21,10 @@ Pikainen tiivistys The Apache Software Foundationin artikkelista [Apache HTTP Se
 
 Ensin suoritin komennon sudo apt update && sudo apt install certbot python3-certbot-apache, jolla siis asensin certbotin. Certbot on Let’s Encryptin virallinen asiakasohjelma. 
 
-kuva
+![Add file: Upload](Sala1.png)
 
-Sitten hankin ja asensin sertifikaatin komennolla sudo certbot --apache. Seurasin ruudulle ilmestyviä ohjeita.
+Sitten hankin ja asensin sertifikaatin komennolla sudo certbot --apache. Seurasin ruudulle ilmestyviä ohjeita. Syötin oman sähköpostiosoitteeni (tässä kohtaa kannattaa olla kärsivällinen, luulin ensin että komentorivi jumittui, mutta sillä kestikin vain aikansa kunnes vastasi) ja valitsin sen domainin, jolle halusin sertifikaatin, eli angeloftech.com.
+
+![Add file: Upload](Sala2.png)
+
+No sittenpä tulikin vastaan ongelma, nimittäin sen minkä taakseen jättää, sen edestään eittämättä löytää. En siis ollut viime viikolla saanut domainia toimintaan, joten eihän sertifikaatin asennus tietenkään onnistunut. 
