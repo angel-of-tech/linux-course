@@ -7,3 +7,4 @@ I'm stupid but I love Linux.
 - [h3: Hello Web Server](h3-Hello-Web-Server.md)
 - [h4: Maailma Kuulee](h4-Maailma-Kuulee.md)
 - [h5: Nimekäs](h5-nimekäs.md)
+- [h6: Salataampa](h6-Salataampa.md)
