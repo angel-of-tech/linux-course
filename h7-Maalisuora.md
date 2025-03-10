@@ -1,4 +1,4 @@
-### "Hei maailma" -ohjelman toteutus Linuxissa kolmella ohjelmointikielellä
+# "Hei maailma" -ohjelman toteutus Linuxissa kolmella ohjelmointikielellä
 
 Tehtävänä oli kirjoittaa kolmella kielellä "Hei maailma!". Valitsin Pythonin, Bashin ja C:n.
 
@@ -26,7 +26,7 @@ C on matalan tason ohjelmointikieli, joka vaatii kääntämisen ennen suoritusta
 
 Ja nyt ohjelman voi ajaa onnistuneesti.
 
-### Oman komennon lisääminen Linuxiin kaikkien käyttäjien käytettäväksi
+# Oman komennon lisääminen Linuxiin kaikkien käyttäjien käytettäväksi
 
 Siirryin ensin /usr/local/bin/ -hakemistoon, joka on yleisesti tarkoitettu käyttäjän lisäämille komennoille. Käytin komentoa `cd /usr/local/bin/`.
 
@@ -44,13 +44,13 @@ Tulos rwxr-xr-x tarkoittaa, että kaikki käyttäjät voivat suorittaa skriptin.
 
 Nyt kun komennon `heipsu` suorittaa, terminaaliin tulostuu haluamani viesti.
 
-### Vanha laboratorioharjoitus
+# Vanha laboratorioharjoitus
 
-# Ei kolmea sekoseiskaa
+### Ei kolmea sekoseiskaa
 
 Tässä alakohdassa tulee suojata raportti siten, etteivät muut voi katsella sitä. Jos raporttitiedosto on nimeltään raportti.txt, sen voi suojata komennolla `chmod 600 raportti.txt`. Nyt minä voin lukea ja kirjoittaa tiedostoon, mutta muut käyttäjät eivät voi katsoa sitä.
 
-# 'howdy'-komento
+### 'howdy'-komento
 
 ![image](https://github.com/user-attachments/assets/87447394-ac35-4b76-96c4-96275ec491b8)
 
@@ -62,7 +62,7 @@ Tallensin tiedoston ja annoin tiedostolle suoritusoikeudet komennolla `sudo chmo
 
 Toimii kuten pitääkin.
 
-# Apache-verkkopalvelimen asennus ja AI Kakone -kotisivu
+### Apache-verkkopalvelimen asennus ja AI Kakone -kotisivu
 
 Apachen voi asentaa komennoilla `sudo apt update` ja `sudo apt install apache2 -y`. 
 
@@ -70,7 +70,7 @@ Apachen voi asentaa komennoilla `sudo apt update` ja `sudo apt install apache2 -
 
 Poistin alkuperäisen Apache-sivun (otettuani siitä ensin varmuuskopion) komennolla `sudo rm /var/www/html/index.html`, joka jälkeen kirjoitin uuden HTML-sivun.
 
-### Lähteet:
+# Lähteet:
 Tämä raportti on vielä kesken :) 
 
 
