@@ -8,3 +8,4 @@ I'm stupid but I love Linux.
 - [h4: Maailma Kuulee](h4-Maailma-Kuulee.md)
 - [h5: Nimekäs](h5-nimekäs.md)
 - [h6: Salataampa](h6-Salataampa.md)
+- [h7: Maalisuora](h7-Maalisuora.md) 
