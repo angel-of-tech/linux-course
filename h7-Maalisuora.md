@@ -68,13 +68,32 @@ Apachen voi asentaa komennoilla `sudo apt update` ja `sudo apt install apache2 -
 
 ![image](https://github.com/user-attachments/assets/75fdee67-0dd0-4ea2-a7ec-ee493fdd6f0a)
 
-Poistin alkuperäisen Apache-sivun (otettuani siitä ensin varmuuskopion) komennolla `sudo rm /var/www/html/index.html`, joka jälkeen kirjoitin uuden HTML-sivun.
+Poistin alkuperäisen Apache-sivun (otettuani siitä ensin varmuuskopion) komennolla `sudo rm /var/www/html/index.html`, jonka jälkeen kirjoitin uuden HTML-sivun.
+
+
+![image](https://github.com/user-attachments/assets/289f0a55-5531-4f08-b1cd-21cfe8ea7a15)
+
+Näkyy! Jotta normaalikin käyttäjä pääsee ilman sudo-oikeuksia muokkaamaan, ajoin komennot `sudo chown -R $USER:$USER /var/www/html/` ja `sudo chmod -R 755 /var/www/html/`.
+
+Sitten asensin SSH-palvelimen komennoilla `sudo apt update` ja `sudo apt install openssh-server -y`.
+
+![image](https://github.com/user-attachments/assets/090a9a3c-fef9-4aab-ad97-ebdb3eac9783)
+
+Lisäsin uuden käyttäjän omalla nimelläni. Uuden avainparin sain luotua komennolla `ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa`.
+
+![image](https://github.com/user-attachments/assets/8e0456e3-80e5-42a2-9263-0092d3acb524)
+
+Kopioin julkisen avaimen käyttäjälle `ssh-copy-id veerate01@localhost` ja pääsin kirjautumaan sisään. 
+
+
+
 
 # Lähteet:
-Tämä raportti on vielä kesken :) 
 
+Tero Karvinen 2024, Vanha laboratorioharjoitus: [https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/ 
+](https://terokarvinen.com/2024/arvioitava-laboratorioharjoitus-2024-linux-palvelimet/)
 
-
+SDSU, Run a C Program in Linux: [https://ost.sdsu.edu/kb/faq.php?id=152](https://ost.sdsu.edu/kb/faq.php?id=152)
 
 
 
